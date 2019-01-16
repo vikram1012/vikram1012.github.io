@@ -1,11 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
-*
-{
+.grad{
 	margin:0;
 	padding:0;
-	background-color:#FF7979;
+	background-image: linear-gradient(to right, rgba(212, 14, 14, 0.411), rgba(207, 65, 29, 0.651),rgba(231, 20, 101, 0.411));
 }
+html {
+	scroll-behavior: smooth;
+  }
 /*----Navigation-----*/
 #nav-bar
 {
@@ -16,7 +18,7 @@
 .navbar-band img
 {
 	height:40px;
-	padding-left::30px;
+	padding-left:30px;
 }
 .navbar-nav li
 {
@@ -26,10 +28,11 @@
 {
 	float:right;
 	text-align:left;
+	background-image: linear-gradient(to right, rgba(212, 14, 14, 0.411), rgba(207, 65, 29, 0.651),rgba(231, 20, 101, 0.411));
 }
 #nav-bar ul li a:hover
 {
-	color:#CD1B39!important;
+	color:rgb(182, 196, 197)!important;
 }
 .navbar
 {
@@ -67,6 +70,12 @@
 {
 	margin-top:20px;
 	margin-bottom:30px;
+	color: #555;
+	background-color:silver;
+}
+#About .btn:hover
+{
+	color: blue;
 }
 .about-content
 {
@@ -76,28 +85,36 @@
 {
 	margin-bottom:6px;
 	font-weight:600;
+	background-color: #999;
+}
+.skill-bar 
+{
+	background-color:white;
+	background-image: image(ganmer.png)
 }
 .progress-bar
 {
 	border-radius:16px;
+
 	
 }
 .progress
 {
 	border-radius:16px!important;
 	margin-bottom:20px;
+	color: #999;
 
 }
 /*-----services-----*/
 #services 
 {
-	color:#333;
+	color:white;
 	padding-top:50px;
 	padding-bottom:50px;
 }
 #services h1
 {
-	color:#333;
+	color:beige;
 	font-size:30px;
 	font-weight:600;
 	text-align:center;
@@ -139,6 +156,10 @@
 	border-radius:50%;
 	cursor:pointer;
 }
+.icon:hover
+{
+	color:red;
+}
 /*------team-----*/
 #team
 {
@@ -146,10 +167,14 @@
 	padding-bottom:50px;
 	color:#555;
 }
+#team p
+{
+	color: white;
+}
 h1
 {
 	text-align:center;
-	color:#555!important;
+	color:red!important;
 	padding-bottom:10px;
 }
 h1::after
@@ -225,16 +250,27 @@ h1::after
 {
 	transition:0.5s;
 }
+iframe
+{
+ padding-left: 15px;
+ padding-right: 15px;
+ padding: 20px;
+ width: 100%;
+}
 #contact
 {
-	background-color:#efefef;
+	background-image: linear-gradient(to right, rgba(212, 14, 14, 0.411), rgba(207, 65, 29, 0.651),rgba(231, 20, 101, 0.411));
 	padding-top:40px;
 	padding-bottom:40px;
-	color:#777;
+
 }
 .contact-form
 {
 	padding:15px;
+}
+.contact-form .btn:hover
+{
+	color: blue;
 }
 .form-control
 {
